@@ -1,0 +1,14 @@
+.friend {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.friend .friend__avatar {
+  width: 44px;
+  border-radius: 42%;
+}
+
+.friend__avatar.g-avatar {
+  width: 64px;
+}
