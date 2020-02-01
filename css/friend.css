@@ -51,3 +51,17 @@
   color: #20b94d;
   font-size: 12px;
 }
+
+.friends__plus .friends__plus-title,
+.friends__list .friends__title {
+  border-top: 1px solid #ebebeb;
+  margin-top: 20px;
+  padding: 15px 0px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.friend__column .friend__icon {
+  font-size: 14px;
+  opacity: 0.7;
+}
