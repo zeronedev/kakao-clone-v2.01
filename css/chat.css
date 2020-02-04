@@ -1,13 +1,13 @@
-.chats-body {
+.chat-body {
   padding: 10px 0px;
 }
 
-.chats-body .status-bar,
-.chats-body .header {
+.chat-body .status-bar,
+.chat-body .header {
   padding: 0px 20px;
 }
 
-.chat {
+.chat-screen {
   background-image: url("../images/chatBg.png");
   min-height: 100vh;
 }
@@ -46,4 +46,79 @@
 
 .chat__write-column input:focus {
   outline: none;
+}
+
+.chat-screen .chat__messages {
+  padding-top: 30px;
+  border-top: 1px solid #e94a4a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat__messages .chat__timestamp {
+  padding: 5px 10px;
+  background-color: #f6f9fc;
+  border: 1px solid #e94a4a;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.chat__messages .message {
+  width: 100%;
+  display: flex;
+}
+
+.chat__messages .chat__avatar {
+  width: 54px;
+  border-radius: 42%;
+  margin-right: 15px;
+}
+
+.chat__messages .incoming-message {
+  width: 80%;
+  display: flex;
+  align-self: flex-start;
+  padding-left: 20px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.chat__messages .sent-message {
+  width: 80%;
+  display: flex;
+  align-self: flex-end;
+  margin-top: 20px;
+}
+
+.incoming-message .message__bubble {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e94a4a;
+  border-radius: 15px;
+  padding: 5px 10px;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.sent-message .message__bubble {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e94a4a;
+  border-radius: 15px;
+  padding: 5px 10px;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.incoming-message .message__timestamp {
+  align-self: flex-end;
+  padding-left: 5px;
+}
+
+.sent-message .message__timestamp {
+  align-self: flex-end;
+  padding-right: 5px;
 }
